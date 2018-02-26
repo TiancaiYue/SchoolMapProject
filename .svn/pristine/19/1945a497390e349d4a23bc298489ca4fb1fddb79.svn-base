@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.keyuan.shcoolmap"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="25" />
+
+    <!-- 权限声明 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.read" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.write" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 允许程序获得设备信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" /> <!-- for android -->
+    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+    <!-- for Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:name="com.keyuan.schoolmap.Application"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_school_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_school_icon"
+        android:supportsRtl="true"
+        android:theme="@style/BaseTheme" >
+        <activity
+            android:name="com.keyuan.schoolmap.activity.LoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.keyuan.schoolmap.activity.TestActivity"
+            android:label="测试"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.RegisterActivity"
+            android:label="注册"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.keyuan.schoolmap.activity.ForgetPasswordActivity"
+            android:label="忘记密码"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.ClipImageActivity"
+            android:label="图片剪裁"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.CheckingInActivity"
+            android:label="签到"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.SignInRecordActivity"
+            android:label="签到记录"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.AddActionDataActivity"
+            android:label="考勤记录"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.CommentActivity"
+            android:label="校圈评论"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.HotActivitiesActivity"
+            android:label="热门活动"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.InformActivity"
+            android:label="近期通知"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.ApplyActivity"
+            android:label="添加申请"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.ForMyApprovalActivity"
+            android:label="待我处理"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.ChangePassWordActivity"
+            android:label="更改密码"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.FeedBackActivity"
+            android:label="意见反馈"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.SettingActivity"
+            android:label="设置"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.MineUpDataMessageActivity"
+            android:label="我的校圈"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.HotShopActivity"
+            android:label="推荐商铺"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.AskForLeaveActivity"
+            android:label="请假"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.SearchReviewerActivity"
+            android:label="选择审核人"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.ShopDetailsActivity"
+            android:label="店铺详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.SubmitExpenseAccountActivity"
+            android:label="报销"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.ActivtiesApplyActivity"
+            android:label="活动"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.AddLookForThingsDetailsActivity"
+            android:label="添加失物详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.SignedSupplementActivity"
+            android:label="补签"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.AcomplaintActivity"
+            android:label="投诉"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.ActivitiseDetailsActivity"
+            android:label="活动详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.ApplyOnlineActivity"
+            android:label="活动在线报名"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.AddApplySuccessActivity"
+            android:label="活动报名成功"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.MyPlanningActivity"
+            android:label="我的活动"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.BigImageViewActrivity"
+            android:label="放大图"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.ApprovalDetailsActivity"
+            android:label="审批详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.ApprovalDetailsTwoActivity"
+            android:label="报销审批详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.CreateShopActivity"
+            android:label="添加店铺"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.CreateShopWebViewActivity"
+            android:label="添加商品协议"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.WebActivity"
+            android:label="WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.LookForThingsActivity"
+            android:label="失物寻找"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.LookForThingsDetailsActivity"
+            android:label="失物详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.AddShopThingActivity"
+            android:label="添加商品"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.PersonalDataActivity"
+            android:label="用户详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.StudentListActivity"
+            android:label="学籍列表"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.ClassRoomDetailsActivity"
+            android:label="教室详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.AddressBookActivity"
+            android:label="通讯录"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.TeacherOrStudentAdreessActivity"
+            android:label="通讯录二级界面"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.AddressDetailsListActivity"
+            android:label="通讯录三级界面"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.DialogTestActivity"
+            android:label="测试各种dialog页面"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.ShareAppActivity"
+            android:label="分享邀请好友"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keyuan.schoolmap.activity.TeacherListActivity"
+            android:label="教师列表"
+            android:screenOrientation="portrait" />
+        <!-- 适配Android 7.0更新apk和拍照问题 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.keyuan.schoolmap.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!-- App更新 -->
+        <service android:name="com.keyuan.schoolmap.service.AppUpdateService" />
+        <service
+            android:name="com.keyuan.schoolmap.service.BadgeIntentService"
+            android:exported="false" />
+        <!-- ==========================分享集成开始========================= -->
+        <!-- 新浪 -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 友盟Key配置 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5a7a8afea40fa348200001f6" />
+        <!-- ==========================分享集成结束========================= -->
+        <!-- 微信支付 -->
+        <activity
+            android:name="com.keyuan.schoolmap.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <!-- 支付宝集成 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 配置高德地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c4d3a409ff495371eba6d134887c4358" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <provider
+            android:name="com.readystatesoftware.chuck.internal.data.ChuckContentProvider"
+            android:authorities="com.keyuan.shcoolmap.chuck.provider"
+            android:exported="false" />
+
+        <activity
+            android:name="com.readystatesoftware.chuck.internal.ui.MainActivity"
+            android:label="@string/chuck_name"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.readystatesoftware.chuck.task"
+            android:theme="@style/Chuck.Theme" />
+        <activity
+            android:name="com.readystatesoftware.chuck.internal.ui.TransactionActivity"
+            android:parentActivityName="com.readystatesoftware.chuck.internal.ui.MainActivity"
+            android:theme="@style/Chuck.Theme" />
+
+        <service
+            android:name="com.readystatesoftware.chuck.internal.support.ClearTransactionsService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.lzy.ninegrid.preview.ImagePreviewActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.luck.picture.lib.PictureFileProvider"
+            android:authorities="com.keyuan.shcoolmap.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.luck.picture.lib.PictureSelectorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity.Theme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.luck.picture.lib.PictureBaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.luck.picture.lib.PicturePreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity.Theme" />
+        <activity
+            android:name="com.luck.picture.lib.PictureVideoPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@style/activity.Theme" />
+        <activity
+            android:name="com.luck.picture.lib.PictureExternalPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity.Theme" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.yalantis.ucrop.PictureMultiCuttingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.luck.picture.lib.PicturePlayAudioActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+
+</manifest>

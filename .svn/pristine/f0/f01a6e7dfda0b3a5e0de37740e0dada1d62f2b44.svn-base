@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sp_12"
+        android:layout_marginLeft="@dimen/sp_12"
+        android:layout_marginRight="@dimen/sp_12"
+        android:layout_marginTop="@dimen/sp_12"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_head_portrait_default"
+            app:siShape="@drawable/shape_circle"
+            app:siSquare="true"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sp_12"
+            android:layout_weight="1"
+            android:text="移动1501东皇太一"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_15"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12-20 15:58"
+            android:textSize="@dimen/text_size_13"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sp_12"
+        android:layout_marginRight="@dimen/sp_12"
+        android:text="多撒发奥奥奥所所阿斯顿发发发呆爱迪生发大发送答案是第三发放水电费个是白。"
+        android:textColor="@color/textColor"/>
+
+    <com.lzy.ninegrid.NineGridView
+        android:id="@+id/nine_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sp_12"
+        android:layout_marginRight="@dimen/sp_12"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/ll_thump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="@dimen/sp_12"
+                android:src="@drawable/bg_thump"/>
+
+            <TextView
+                android:id="@+id/tv_thump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="赞（2）"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_comments"/>
+
+            <TextView
+                android:id="@+id/tv_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="评论（1）"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineColor"/>
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/windowBackground"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <com.keyuan.schoolmap.widget.RxTitleBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tb_title="投诉">
+
+        </com.keyuan.schoolmap.widget.RxTitleBar>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rel_leave_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/sp_12">
+
+                    <TextView
+                        android:id="@+id/textView76"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="投诉类型"
+                        android:textColor="@color/textColor"/>
+
+                    <ImageView
+                        android:id="@+id/textView77"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView76"
+                        android:layout_marginLeft="@dimen/sp_12"
+                        android:src="@drawable/ic_right_gray"/>
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textView77"
+                        android:layout_toLeftOf="@+id/textView77"
+                        android:layout_toStartOf="@+id/textView77"
+                        android:gravity="right"
+                        android:hint="请选择投诉类型"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/windowBackground"
+                    android:padding="@dimen/sp_12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="事由"
+                        android:textColor="@color/textColor"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_enter_the_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/white"
+                    android:gravity="top|left"
+                    android:hint="请输入事由"
+                    android:padding="@dimen/sp_12"
+                    android:textSize="@dimen/text_size_14"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/windowBackground"
+                    android:padding="@dimen/sp_12"
+                    android:text="上传图片"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:padding="@dimen/sp_12"
+                    android:visibility="visible"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8px"
+                    android:background="@color/windowBackground"/>
+
+                <RelativeLayout
+                    android:id="@+id/rel_choose_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/sp_12">
+
+                    <TextView
+                        android:id="@+id/textView79"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="审批人"/>
+
+                    <ImageView
+                        android:id="@+id/textView80"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView79"
+                        android:layout_marginLeft="@dimen/sp_12"
+                        android:src="@drawable/ic_right_gray"/>
+
+                    <TextView
+                        android:id="@+id/tv_choose_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textView80"
+                        android:layout_toLeftOf="@+id/textView80"
+                        android:layout_toStartOf="@+id/textView80"
+                        android:gravity="right"
+                        android:hint="请选择审批人"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/lineColor"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/windowBackground"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sp_12"
+                android:background="@drawable/bg_btn_base_app_20dp"
+                android:text="提交"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

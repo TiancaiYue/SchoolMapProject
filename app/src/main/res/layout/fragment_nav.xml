@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <com.keyuan.schoolmap.widget.NavigationButton
+        android:id="@+id/nav_item_home"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" />
+
+    <com.keyuan.schoolmap.widget.NavigationButton
+        android:id="@+id/nav_item_nearby"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" />
+
+    <com.keyuan.schoolmap.widget.NavigationButton
+        android:id="@+id/nav_item_dynamic"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" />
+
+    <com.keyuan.schoolmap.widget.NavigationButton
+        android:id="@+id/nav_item_mine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" />
+</LinearLayout>

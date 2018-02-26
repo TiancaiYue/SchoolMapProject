@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <com.keyuan.schoolmap.widget.RxTitleBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tb_title="在线报名">
+
+        </com.keyuan.schoolmap.widget.RxTitleBar>
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="64dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:padding="@dimen/sp_12">
+
+                    <com.keyuan.schoolmap.widget.RxSquareLayout
+                        android:id="@+id/textView8"
+                        android:layout_width="76dp"
+                        android:layout_height="76dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/sp_12">
+
+                        <ImageView
+                            android:id="@+id/iv_image"
+                            android:layout_width="76dp"
+                            android:layout_height="76dp"
+                            android:background="@color/windowBackground"/>
+                    </com.keyuan.schoolmap.widget.RxSquareLayout>
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/textView8"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="2017上海莫奈油画展"
+                        android:textSize="@dimen/text_size_15"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:text="¥60.00"
+                        android:textSize="@dimen/text_size_15"/>
+
+                    <TextView
+                        android:id="@+id/tv_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@+id/textView8"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="地点：中央美术学院"/>
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_position"
+                        android:layout_alignStart="@+id/tv_position"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="时间：2017-08-11 09:00-10:00"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8px"
+                    android:background="@color/windowBackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/sp_12"
+                    android:text="活动简介"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sp_12"
+                    android:layout_marginLeft="@dimen/sp_12"
+                    android:layout_marginRight="@dimen/sp_12"
+                    android:text="阿斯顿发冷风机阿斯利康等放假阿里奋斗的撒节流阀卡两地分居垃圾发链接发生了地方第三发电防守打法。"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8px"
+                    android:background="@color/windowBackground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/sp_12"
+                    android:text="报名信息"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/lineColor"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/sp_12"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="姓名"/>
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="请输入姓名"
+                        android:textSize="@dimen/text_size_14"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/sp_12"
+                    android:layout_marginRight="@dimen/sp_12"
+                    android:background="@color/lineColor"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/sp_12"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电话"/>
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:digits="0123456789"
+                        android:gravity="right"
+                        android:hint="请输入电话"
+                        android:textSize="@dimen/text_size_14"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/goldenYellow"
+            android:text="确认报名"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</LinearLayout>

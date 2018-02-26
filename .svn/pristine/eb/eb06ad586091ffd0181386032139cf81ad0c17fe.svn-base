@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="org.raphets:roundimageview-1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/roundimageview-1.2.0.aar/9d1fb2a4886a34b2287e7c01b8d02ca8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/roundimageview-1.2.0.aar/9d1fb2a4886a34b2287e7c01b8d02ca8/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.raphets/roundimageview/1.2.0/35d79965ec3f32553cdce75c66f384599e2fe873/roundimageview-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

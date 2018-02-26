@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <com.keyuan.schoolmap.widget.RxTitleBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tb_title="活动详情">
+
+        </com.keyuan.schoolmap.widget.RxTitleBar>
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="64dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:padding="@dimen/sp_12">
+
+                    <TextView
+                        android:id="@+id/tv_will_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="【即将开始】"
+                        android:textColor="#18C1B3"
+                        android:textSize="@dimen/text_size_15"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_will_start"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="真爱婚庆鲜花 粉红之恋 送手捧花一束"
+                        android:textSize="@dimen/text_size_15"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:text="50人"
+                        android:textColor="@color/goldenYellow"
+                        android:textSize="17dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_thump"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/ll_share"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_thump"/>
+
+                        <TextView
+                            android:id="@+id/tv_thump"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:text="521"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_share"/>
+
+                        <TextView
+                            android:id="@+id/tv_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="521"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8px"
+                    android:background="@color/windowBackground"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/sp_12">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="活动信息"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="时间：2017-08-09 9:00-10:00"/>
+
+                    <TextView
+                        android:id="@+id/tv_position"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="地点：中央美术学院"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8px"
+                    android:background="@color/windowBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sp_12"
+                    android:layout_marginTop="@dimen/sp_12"
+                    android:text="简介"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size_15"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/sp_12"
+                    android:text="帝国时代刚好是都看过何时可掇刚开始赶快发货管理科收款方式感动死了开个会说课稿科技时代韩国可是对方更好。"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sp_12"
+                    android:layout_marginTop="@dimen/sp_12"
+                    android:text="已报名"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size_15"
+                    android:textStyle="bold"/>
+
+                <com.keyuan.schoolmap.widget.PileLayout
+                    android:id="@+id/pile_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:PileLayout_pileWidth="10dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rel_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/sp_12"
+                android:background="@drawable/bg_btn_base_app_8dp"
+                android:text="立即报名"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

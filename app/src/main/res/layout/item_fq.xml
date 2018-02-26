@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="@dimen/sp_12">
+
+    <org.raphets.roundimageview.RoundImageView
+        android:id="@+id/iv_gift_image"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_default_image"
+        app:leftBottom_corner_radius="8dp"
+        app:leftTop_corner_radius="8dp"
+        app:rightBottom_corner_radius="8dp"
+        app:rightTop_corner_radius="8dp"
+        app:type="round" />
+
+    <TextView
+        android:id="@+id/tv_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="【文献解读】9月8日解密直播的大发发达地方大赛分为传但是阿萨德产生的发挥闪电发货" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="500"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_app_button_integral"
+            android:padding="4dp"
+            android:text="500积分"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

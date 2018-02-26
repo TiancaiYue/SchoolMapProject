@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+            android:id="@+id/iv_head_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_head_photo_default"
+            app:siShape="@drawable/shape_circle"
+            app:siSquare="true"/>
+
+        <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+            android:id="@+id/iv_head_image1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_black"
+            android:visibility="gone"
+            app:siShape="@drawable/shape_circle"
+            app:siSquare="true"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="+\n1"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+</RelativeLayout>

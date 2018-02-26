@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/sp_12">
+
+        <ImageView
+            android:id="@+id/iv_round"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="@dimen/sp_12"
+            android:src="@drawable/bg_but_yuan_app"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_pass_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计算机考试报名 " />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="2017-07-02"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_13" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineColor" />
+
+    <LinearLayout
+        android:id="@+id/ll_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/sp_12">
+
+        <TextView
+            android:id="@+id/tv_brief"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="英语四级报名开始，请各学院班主任班长组织好同学网上报名。"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_13" />
+
+        <ImageView
+            android:id="@+id/iv_detail"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="@dimen/sp_12"
+            android:src="@drawable/drawable_arrow_selected" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:background="@color/windowBackground" />
+
+</LinearLayout>

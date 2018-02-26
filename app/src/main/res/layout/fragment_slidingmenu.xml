@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="start"
+              android:background="@color/white"
+              android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_head_photo_default"
+                    app:siShape="@drawable/shape_circle"
+                    app:siSquare="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_24"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_16"
+                        android:text="神仙姐姐" />
+
+                    <TextView
+                        android:id="@+id/tv_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_12"
+                        android:text="学院" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sp_12"
+                android:text="当前余额" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size_20"
+                android:text="50.03" />
+
+            <TextView
+                android:id="@+id/tv_add_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sp_12"
+                android:background="@drawable/bg_btn_base"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp"
+                android:text="饭卡充值"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_one"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/sp_12"
+                android:background="@drawable/bg_btn_base_border"
+                android:text="签到打卡"
+                android:textColor="@color/goldenYellow" />
+
+            <Button
+                android:id="@+id/btn_two"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/sp_12"
+                android:background="@drawable/bg_btn_base_border"
+                android:text="失物招领"
+                android:textColor="@color/goldenYellow" />
+
+            <Button
+                android:id="@+id/btn_three"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/sp_12"
+                android:background="@drawable/bg_btn_base_border"
+                android:text="我的课表"
+                android:textColor="@color/goldenYellow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@drawable/actionbar_shadow_up" />
+
+
+</LinearLayout>

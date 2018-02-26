@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rel_item"
+                android:layout_width="match_parent"
+                android:layout_height="64dp">
+
+    <LinearLayout
+        android:id="@+id/ll_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:id="@+id/view_next"
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="@color/lineColor"/>
+
+        <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+            android:id="@+id/iv_to_person"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_head_portrait_default"
+            android:visibility="visible"
+            app:siShape="@drawable/shape_circle"
+            app:siSquare="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/sp_12"
+        android:layout_toRightOf="@+id/ll_picture"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_to_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="东皇太一发起"/>
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="同意"
+            android:textColor="@color/goldenYellow"/>
+
+        <TextView
+            android:id="@+id/tv_data_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sp_12"
+            android:text="2017-5-9 17:52"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">我的大学</string>
+    <string name="tab_menu_shebei">首页</string>
+    <string name="tab_menu_message">留言</string>
+    <string name="tab_menu_map">设备</string>
+    <string name="tab_menu_add">添加</string>
+    <string name="tab_menu_mess">校圈</string>
+    <string name="tab_menu_me">我的</string>
+    <string name="exo_play_reminder">您当前网络不是wifi，是否继续观看视频</string>
+    <string name="exo_play_wifi_hint_no">提示</string>
+    <string name="press_twice_exit">再次按返回键退出</string>
+    <string name="exit_directly">直接退出</string>
+    <string name="cancel">Cancel</string>
+    <string name="setting">Settings</string>
+    <string name="empty_view_loading_data">加载中...</string>
+    <string name="empty_view_network_error">内容加载失败\r\n点击重新加载</string>
+    <string name="empty_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="empty_view_empty_data">暂无内容</string>
+    <string name="title_activity_share_app">ShareAppActivity</string>
+</resources>
+
